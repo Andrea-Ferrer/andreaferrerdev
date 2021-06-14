@@ -1,0 +1,186 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Raleway', sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+    width: 100%;
+}
+header{ 
+    width: 100%
+}
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    padding: 15px;
+}
+
+ul {
+    display: flex;
+    margin-right: 60px;
+    padding: 8px;
+    color: #f4f4f4;
+    margin-bottom: 0%;
+}
+ul a {
+    color: #f4f4f4;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 15px;
+    list-style: none;
+}
+ul a:hover{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+.presentacion {
+    width: 100%;
+    padding-top: 7%;
+    display: grid;
+    grid-template-columns:50% 50%;
+    align-items: center;
+}
+.titulo {
+    padding-left: 10%;
+    font-size: 80px;
+    width: 100%;
+}
+.fotografia {
+    width: 38%;
+    padding-left: 30%;
+}
+.habilidades{
+    padding-left: 5%;
+    padding-top: 15%;
+    padding-bottom: 12%;
+    font-size: 25px;
+    color: #979696;
+}
+.iconos img{
+    padding-top: 5%;
+    padding-left: 7%;
+    width: 80%;
+}
+/* formulario*/
+.formulario{
+    width: 80%;
+    margin: 10% auto;
+}
+.subtitulo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.titulo-proyecto{
+    margin: 2px auto;
+}
+/*skider*/
+
+/*contenedor principal y flechas*/
+.contenedor-padre{
+    padding-left: 5%;
+    padding-top: 8%;
+    width: 90%;
+    color: #979696;
+}
+.contenedor-padre h2{
+    font-size: 35px;
+}
+.contenedor-principal{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.flecha-izquierda{
+    height: 20px;
+    position: absolute;
+}
+.flecha-izquierda:hover{
+    cursor: pointer;
+}
+.flecha-derecha{
+    height: 20px;
+    position: absolute;
+    right: 0%;
+}
+.flecha-derecha:hover{
+    cursor: pointer;
+}
+
+.slider{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 0px;
+}
+.contenedor-slider{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.card-slider{
+    padding: 2px;
+    min-width: 20%;
+    transition: .3s ease all;
+}
+.card.hover{
+    scale: (1.2);
+    transform-origin: center;
+}
+.imagen{
+    width: 100%;
+    border-radius: 5px;
+}
+h5{
+    text-align: center;
+}
+.margen-trabajos{
+    margin: 10px;
+    width: 30%
+}
+
+/*media queries*/
+@media screen and (max-width:800px) {
+    ul{
+        margin-right: 30px;
+    }
+    ul a{
+        font-size: 12px;
+    }
+    .titulo{
+        font-size: 57px;
+    }
+    .fotografia{
+        display: none;
+    }
+    .habilidades{
+        font-size: 18px;
+    }
+    .iconos img {
+        width: 90%;
+        padding-left: 0%;
+    }
+    .contenedor-padre h2{
+        font-size: 30px;
+    }
+    .flecha-izquierda{
+        display: none;
+    }
+    .flecha-derecha{
+        display: none;
+    }
+    .contenedor-slider{
+        overflow: visible
+    }
+    .slider{
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-columns: 3
+    }
+    .card-slider{
+        width: 30%;
+    }
+}
