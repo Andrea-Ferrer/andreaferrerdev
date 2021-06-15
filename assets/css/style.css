@@ -3,10 +3,12 @@
     margin: 0%;
     font-family: 'Raleway', sans-serif;
 }
+/*cuerpo pagina*/
 body {
     background-color: #f4f4f4;
     width: 100%;
 }
+/*header y menu*/
 header{ 
     width: 100%
 }
@@ -18,6 +20,7 @@ nav {
 }
 .logo {
     padding: 15px;
+    height: 30px;
 }
 
 ul {
@@ -38,6 +41,7 @@ ul a:hover{
     text-decoration: none;
     color: #f4f4f4;
 }
+/*Fullstack developer*/
 .presentacion {
     width: 100%;
     padding-top: 7%;
@@ -50,10 +54,18 @@ ul a:hover{
     font-size: 80px;
     width: 100%;
 }
+.sobremi{
+    font-size: 30px;
+    width: 60%;
+    padding-left: 5%;
+    padding-top: 13%;
+}
+/*foto de mi*/
 .fotografia {
     width: 38%;
     padding-left: 30%;
 }
+/*seccion de habilidades*/
 .habilidades{
     padding-left: 5%;
     padding-top: 15%;
@@ -66,7 +78,7 @@ ul a:hover{
     padding-left: 7%;
     width: 80%;
 }
-/* formulario*/
+/* formulario de pagina de contacto*/
 .formulario{
     width: 80%;
     margin: 10% auto;
@@ -79,7 +91,7 @@ ul a:hover{
 .titulo-proyecto{
     margin: 2px auto;
 }
-/*skider*/
+/*slider*/
 
 /*contenedor principal y flechas*/
 .contenedor-padre{
@@ -111,7 +123,6 @@ ul a:hover{
 .flecha-derecha:hover{
     cursor: pointer;
 }
-
 .slider{
     display: flex;
     flex-wrap: nowrap;
@@ -137,26 +148,89 @@ ul a:hover{
 h5{
     text-align: center;
 }
+/*seccion de portafolio*/
 .margen-trabajos{
     margin: 10px;
     width: 30%
 }
+/*segundo slider
+.contenedor-padre-dos{
+    padding-left: 5%;
+    padding-top: 8%;
+    width: 90%;
+    color: #979696;
+}
+.contenedor-padre-dos h2{
+    font-size: 35px;
+}
+.contenedor-principal-dos{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.flecha-izquierda-dos{
+    height: 20px;
+    position: absolute;
+}
+.flecha-izquierda-dos:hover{
+    cursor: pointer;
+}
+.flecha-derecha-dos{
+    height: 20px;
+    position: absolute;
+    right: 0%;
+}
+.flecha-derecha-dos:hover{
+    cursor: pointer;
+}
+.contenedor-slider-dos{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.card-slider-dos{
+    padding: 2px;
+    min-width: 20%;
+    transition: .3s ease all;
+}
+.slider-dos{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 0px;
+}*/
 
 /*media queries*/
 @media screen and (max-width:800px) {
+    /*header y menu*/
+    .logo {
+        padding: 15px;
+        height: 22px;
+    }
     ul{
         margin-right: 30px;
     }
     ul a{
         font-size: 12px;
     }
+    /*Fullstack developer*/
     .titulo{
-        padding-top: 15%;
+        padding-top: 23%;
         font-size: 57px;
+        padding-bottom: 20%;
     }
+    /*Foto sobre mi*/
     .fotografia{
         display: none;
     }
+    /*Descripcion sobre mi*/
+    .sobremi{
+        font-size: 13px;
+        width: 80%;
+        padding-left: 6%;
+        padding-top: 13%;
+        padding-bottom: 13%;
+        color: #979696;
+    }
+    /*Seccion habilidades*/
     .habilidades{
         font-size: 18px;
     }
@@ -164,6 +238,7 @@ h5{
         width: 90%;
         padding-left: 0%;
     }
+    /*Slider*/
     .contenedor-padre h2{
         font-size: 30px;
     }
@@ -173,6 +248,13 @@ h5{
     .flecha-derecha{
         display: none;
     }
+    /*
+    .flecha-izquierda-dos{
+        display: none;
+    }
+    .flecha-derecha-dos{
+        display: none;
+    }*/
     .contenedor-slider{
         overflow: visible
     }
