@@ -147,55 +147,71 @@ ul a:hover{
 h5{
     text-align: center;
 }
+
+/*Segundo slider*/
+
+.contenedor-madre{
+    padding-left: 5%;
+    padding-top: 8%;
+    width: 90%;
+    color: #979696;
+}
+.contenedor-madre h2{
+    font-size: 35px;
+}
+.contenedor-principal-madre{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+.flecha-izquierda-madre{
+    height: 20px;
+    position: absolute;
+}
+.flecha-izquierda-madre:hover{
+    cursor: pointer;
+}
+.flecha-derecha-madre{
+    height: 20px;
+    position: absolute;
+    right: 0%;
+}
+.flecha-derecha-madre:hover{
+    cursor: pointer;
+}
+.slider-madre{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px 0px;
+}
+.contenedor-slider-madre{
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.card-slider-madre{
+    padding: 2px;
+    min-width: 20%;
+    transition: .3s ease all;
+}
+.card-slider-madre.hover{
+    scale: (1.2);
+    transform-origin: center;
+}
+.imagen{
+    width: 100%;
+    border-radius: 5px;
+}
+h5{
+    text-align: center;
+}
+
+
 /*seccion de portafolio*/
 .margen-trabajos{
     margin: 10px;
     width: 30%
 }
 /*segundo slider
-.contenedor-padre-dos{
-    padding-left: 5%;
-    padding-top: 8%;
-    width: 90%;
-    color: #979696;
-}
-.contenedor-padre-dos h2{
-    font-size: 35px;
-}
-.contenedor-principal-dos{
-    display: flex;
-    position: relative;
-    align-items: center;
-}
-.flecha-izquierda-dos{
-    height: 20px;
-    position: absolute;
-}
-.flecha-izquierda-dos:hover{
-    cursor: pointer;
-}
-.flecha-derecha-dos{
-    height: 20px;
-    position: absolute;
-    right: 0%;
-}
-.flecha-derecha-dos:hover{
-    cursor: pointer;
-}
-.contenedor-slider-dos{
-    overflow: hidden;
-    scroll-behavior: smooth;
-}
-.card-slider-dos{
-    padding: 2px;
-    min-width: 20%;
-    transition: .3s ease all;
-}
-.slider-dos{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 20px 0px;
-}*/
 
 /*media queries*/
 @media screen and (max-width:800px) {
