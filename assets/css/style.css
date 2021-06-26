@@ -147,6 +147,22 @@ ul a:hover{
 h5{
     text-align: center;
 }
+/*Seccion codepen*/
+.codepen{
+    width: 90%;
+    margin: 0 auto;
+}
+div iframe{
+    border-radius: 15px;
+    overflow-x: hidden;
+    margin-bottom: 20px;;
+}
+.subtitle{
+    padding-top: 8%;
+    padding-bottom: 2%;
+    font-size: 35px;
+    color: #979696;
+}
 
 /*Segundo slider*/
 
